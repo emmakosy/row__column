@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    height: 150vh;
+
+    display:grid;
+    grid-template-areas: 'head head head' 'direction text bar' 'direction foot foot';
+
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 85px 2fr 75px;
+}
+
+.head,.foot,.text,.bar,.direction{
+    background-color:rgb(193, 9, 9);
+    color:rgb(227, 223, 223);
+    border:lightcoral 1px solid;
+    padding: 25px;
+}
+.head{
+    grid-area: head;
+}
+.direction{
+    grid-area: direction;
+}
+.text{
+    grid-area: text;
+}
+
+.bar{
+    grid-area: bar;
+}
+
+.foot{
+    grid-area: foot;
+}
